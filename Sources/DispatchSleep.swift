@@ -1,10 +1,3 @@
-//
-//  DispatchSleep.swift
-//  Useful
-//
-//  Created by Allen Humphreys on 8/30/18.
-//
-
 import Foundation
 
 func sleep(_ dispatchTimeInterval: DispatchTimeInterval) {
@@ -23,5 +16,7 @@ func sleep(_ dispatchTimeInterval: DispatchTimeInterval) {
         }
     case .never:
         return
+    @unknown default:
+        assertionFailure("A new \(DispatchTimeInterval.self) case has been added and this code doesn't handle it")
     }
 }

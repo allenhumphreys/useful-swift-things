@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D59EFAC236DC5AD006A7C0A /* String+Useful.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D59EFAB236DC5AD006A7C0A /* String+Useful.swift */; };
 		4D6F1C1F21388341003FDA00 /* Collection+Useful.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6F1C1D21388341003FDA00 /* Collection+Useful.swift */; };
 		4D6F1C2021388341003FDA00 /* FunctionDebouncing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6F1C1E21388341003FDA00 /* FunctionDebouncing.swift */; };
 		4D6F1C2221388383003FDA00 /* DispatchSleep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6F1C2121388383003FDA00 /* DispatchSleep.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4D59EFAB236DC5AD006A7C0A /* String+Useful.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Useful.swift"; sourceTree = "<group>"; };
 		4D6F1C1D21388341003FDA00 /* Collection+Useful.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Collection+Useful.swift"; sourceTree = "<group>"; };
 		4D6F1C1E21388341003FDA00 /* FunctionDebouncing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunctionDebouncing.swift; sourceTree = "<group>"; };
 		4D6F1C2121388383003FDA00 /* DispatchSleep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchSleep.swift; sourceTree = "<group>"; };
@@ -45,8 +47,9 @@
 			isa = PBXGroup;
 			children = (
 				4D6F1C1D21388341003FDA00 /* Collection+Useful.swift */,
-				4D6F1C1E21388341003FDA00 /* FunctionDebouncing.swift */,
 				4D6F1C2121388383003FDA00 /* DispatchSleep.swift */,
+				4D6F1C1E21388341003FDA00 /* FunctionDebouncing.swift */,
+				4D59EFAB236DC5AD006A7C0A /* String+Useful.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -113,6 +116,7 @@
 				TargetAttributes = {
 					4D7E30292138818900390EEE = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1120;
 					};
 				};
 			};
@@ -154,6 +158,7 @@
 			files = (
 				4D6F1C1F21388341003FDA00 /* Collection+Useful.swift in Sources */,
 				4D6F1C2221388383003FDA00 /* DispatchSleep.swift in Sources */,
+				4D59EFAC236DC5AD006A7C0A /* String+Useful.swift in Sources */,
 				4D7E30302138818900390EEE /* ViewController.swift in Sources */,
 				4D7E302E2138818900390EEE /* AppDelegate.swift in Sources */,
 				4D6F1C2021388341003FDA00 /* FunctionDebouncing.swift in Sources */,
@@ -304,13 +309,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Useful/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.safeco.Useful;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -321,13 +327,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Useful/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.safeco.Useful;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

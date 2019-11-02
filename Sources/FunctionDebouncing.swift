@@ -1,10 +1,3 @@
-//
-//  DispatchSleep.swift
-//  Useful
-//
-//  Created by Allen Humphreys on 8/30/18.
-//
-
 import Foundation
 
 typealias DebouncedFunction<T> = (T) -> Void

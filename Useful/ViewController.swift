@@ -1,10 +1,3 @@
-//
-//  ViewController.swift
-//  Useful
-//
-
 import UIKit
 
-class ViewController: UIViewController {
-
-}
+class ViewController: UIViewController {}
